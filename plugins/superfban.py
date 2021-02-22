@@ -23,9 +23,9 @@ import os
 from . import *
 
 
-@ultroid_cmd(pattern="superfban ?(.*)")
+@ultroid_cmd(pattern="devilfban ?(.*)")
 async def _(event):
-    msg = await eor(event, "Starting a Mass-FedBan...")
+    msg = await eor(event, "𝙳𝙴𝚅𝙸𝙻 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝚂𝚃𝙰𝚁𝚃𝙸𝙽𝙶 𝙼𝙰𝚂𝚂𝙵𝙱𝙰𝙽...")
     fedList = []
     if event.reply_to_msg_id:
         previous_message = await event.get_reply_message()
@@ -149,7 +149,7 @@ async def _(event):
         if len(fedList) == 0:
             await msg.edit("Unable to collect FedAdminList.")
             return
-    await msg.edit(f"FBaning in {len(fedList)} feds.")
+    await msg.edit(f"𝙳𝚎𝚟𝚒𝚕 𝚞𝚜𝚎𝚛𝚋𝚘𝚝 𝚏𝚋𝚊𝚗𝚗𝚒𝚗𝚐 𝚒𝚗  {len(fedList)} 𝚏𝚎𝚍𝚜.")
     try:
         await ultroid_bot.send_message(chat, f"/start")
     except BaseException:
