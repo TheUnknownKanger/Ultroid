@@ -22,9 +22,9 @@ from . import *
 
 # ================================================#
 notmine = "This bot is for {}".format(OWNER_NAME)
-ULTROID_PIC = "https://telegra.ph/file/11245cacbffe92e5d5b14.jpg"
+ULTROID_PIC = "https://telegra.ph/file/3afec06a67b5f9a11f64b.jpg"
 helps = """
-[Uʟᴛʀᴏɪᴅ Sᴜᴘᴘᴏʀᴛ](t.me/ultroidsupport)
+[DEVIL Sᴜᴘᴘᴏʀᴛ](t.me/DEVILUSERBOT)
 
 **Hᴇʟᴘ Mᴇɴᴜ Oғ {}.
 
@@ -60,9 +60,9 @@ async def e(o):
         b = o.builder
         uptime = grt((time.time() - start_time))
         ALIVEMSG = """
-**The Ultroid Userbot...**\n\n
+**The Devil Userbot...**\n\n
 ✵ **Owner** - `{}`
-✵ **Ultroid** - `{}`
+✵ **Devil** - `{}`
 ✵ **UpTime** - `{}`
 ✵ **Python** - `{}`
 ✵ **Telethon** - `{}`
@@ -77,8 +77,8 @@ async def e(o):
         )
         res = [
             b.article(
-                title="Ultroid Userbot",
-                url="https://t.me/TeamUltroid",
+                title="Devil Userbot",
+                url="https://t.me/deviluserbot",
                 description="Userbot | Telethon ",
                 text=ALIVEMSG,
                 thumb=InputWebDocument(ULTROID_PIC, 0, "image/jpeg", []),
